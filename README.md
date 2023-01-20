@@ -1,3 +1,17 @@
+# Installation
+First Clone this repository.
+```
+cd large-scale_MT_African_languages
+cd Family-Adapt
+cd unilm
+git submodule update --init deltalm/fairseq
+cd deltalm/
+pip install --editable fairseq/
+```
+
+# Model Download
+Download our best model for WMT22 and its pre-trained model from this link: https://zenodo.org/record/7555818#.Y8sk2dLMI5k.
+
 # Pre-processing
 Both train and test source sentence has to be preporcessed by adding this token "<<b>src</b>-<b>tgt</b>>" at the begining. For each language pair <b>src</b> is the source_language's ISO code and <b>tgt</b> is the target_language's ISO code. Then merge together all language pairs source sentences into one file and target sentences into another file. 
 ```
